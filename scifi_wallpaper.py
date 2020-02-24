@@ -28,7 +28,7 @@ filesnames listed in `img/img.csv`:\n
     cli_args = 'gsettings set org.gnome.desktop.background picture-uri \
 file:///home/foo/scripts/scifi_wallpaper/img/' + specific_row[0][0]
     cli_args_list = split(cli_args)
-    run(cli_args_list)
+    run(cli_args_list, check=True)
 
 @scifi_wallpaper.command()
 def center():
