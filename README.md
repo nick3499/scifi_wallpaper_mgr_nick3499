@@ -120,3 +120,19 @@ if __name__ == '__main__':
 ```
 
 That `if` statement will call the `scifi_wallpaper()` method if the application runs as a standalone app. But if it were to be imported into another module, its `__name__` would no longer be `__main__` and it would need to be called with using dot syntax to link it: `scifi_wallpaper.scifi_wallpaper()`.
+
+## .sfwall
+
+As an option, a shell script can be added to a directory on the path to execute the script.
+
+```shell
+#! /bin/sh
+
+/bin/python3 /home/foo/scripts/scifi_wallpaper/scifi_wallpaper.py --background $1
+```
+
+Then the application can be executed with one of the following:
+
+- `$ .sfwall center`
+- `$ .sfwall tile`
+- `$ .sfwall artists`
