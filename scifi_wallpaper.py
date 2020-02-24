@@ -18,7 +18,7 @@ filesnames listed in `img/img.csv`:\n
 - `$ python3 scifi_wallpaper.py --background center` (centers bg image)\n
 - `$ python3 scifi_wallpaper.py --background tile` (sets tile mode)\n
 - `$ python3 scifi_wallpaper.py --background artists` (lists artists)'''
-    image_database = '/home/nick/.userpy/scifi_wallpaper/csv/img.csv'
+    image_database = '/home/foo/scripts/scifi_wallpaper/csv/img.csv'
     with open(image_database) as _file:
         _reader = reader(_file)
         specific_row = [row for i, row in enumerate(_reader, 1)
@@ -26,7 +26,7 @@ filesnames listed in `img/img.csv`:\n
         click.echo(f"wallpaper file: \x1b[0;36m{specific_row[0][0]}\x1b[0m")
 
     cli_args = 'gsettings set org.gnome.desktop.background picture-uri \
-file:///home/nick/.userpy/scifi_wallpaper/img/' + specific_row[0][0]
+file:///home/foo/scripts/scifi_wallpaper/img/' + specific_row[0][0]
     cli_args_list = split(cli_args)
     run(cli_args_list)
 
@@ -49,7 +49,7 @@ wallpaper'
 @scifi_wallpaper.command()
 def artists():
     '''`artists()` method lists names, titles and locations of artists.'''
-    artist_database = '/home/nick/.userpy/scifi_wallpaper/csv/artists.csv'
+    artist_database = '/home/foo/scripts/scifi_wallpaper/csv/artists.csv'
     with open(artist_database) as _file:
         _reader = reader(_file)
         for j in _reader:
