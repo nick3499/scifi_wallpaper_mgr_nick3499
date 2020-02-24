@@ -1,0 +1,10 @@
+#! /bin/sh
+# $ . .getlist
+
+ls img > csv/img.csv
+sudo chown 1000:1000 csv/img.csv
+sudo chmod 700 csv/img.csv
+printf "\033[1;34mFile status:\033[0m\n"
+stat csv/img.csv | grep Change
+printf "\033[1;34mCurrent date:\033[0m\n"
+date
