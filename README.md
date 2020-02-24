@@ -27,7 +27,7 @@ One thing missing from this repo is an application subdirectory which contains *
 ## help
 
 ```shell
-`$ python3 scifi_wallpaper.py --help`
+$ python3 scifi_wallpaper.py --help
 ```
 
 The Bash string above will print command line help to the terminal emulator.
@@ -85,7 +85,7 @@ printf "\033[1;34mCurrent date:\033[0m\n"
 date
 ```
 
-`.getlist` prints the following to the terminal emulator:
+`.getlist` prints something similar to the terminal emulator:
 
 ```shell
 File status:
