@@ -3,6 +3,8 @@ Python3: SciFi Wallpaper Manager: csv.reader(), datetime, shlex.split(), subproc
 
 This repo has been made available under the open source [MIT](https://opensource.org/licenses/MIT) license.
 
+![screen capture](screen_capture.png)
+
 Application tested using:
 - Linux 5.4.0-14-generic
 - Ubuntu 20.04 (Focal Fossa, dev branch)
