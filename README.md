@@ -107,7 +107,7 @@ Sun 23 Feb 2020 05:20:54 PM CST
         click.echo(f"wallpaper file: \x1b[0;36m{specific_row[0][0]}\x1b[0m")
 
     cli_args = 'gsettings set org.gnome.desktop.background picture-uri \
-file:///home/nick/.userpy/scifi_wallpaper/img/' + specific_row[0][0]
+file:///home/foo/scripts/scifi_wallpaper/img/' + specific_row[0][0]
     cli_args_list = split(cli_args)
     run(cli_args_list)
 ```
