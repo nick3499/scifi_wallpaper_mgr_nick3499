@@ -1,6 +1,6 @@
 #! /bin/python3
-'''`scifi_wallpaper` module contains methods for setting background image, \
-along with the mode. Help: $ python3 listdir_test.py'''
+'''`scifi_wallpaper` module contains methods for setting background image,
+along with the mode. Help: $ python3 scifi_wallpaper_alt1.py'''
 from os import listdir
 from datetime import date
 from subprocess import run
