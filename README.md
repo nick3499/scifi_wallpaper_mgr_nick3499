@@ -145,3 +145,19 @@ Then the application can be executed with one of the following:
 - `$ .sfwall center`
 - `$ .sfwall tile`
 - `$ .sfwall artists`
+
+## cURL and GraphicsMagick
+
+**cURL** and [GraphicsMagick](http://jeromebelleman.gitlab.io/posts/graphics/gmresize/#resize) can be used to download and resize large images so they can be conveniently centered to fit a desktop background. For example, if the desktop screen resolution was **1600 x 900** and the downloaded JPG image was **1920 x 1080**:
+
+```shell
+$ curl https://imagecdn.farflung.com/xysohsokdoechad.jpg -o cyberpunk_2077_no-tell_motel.jpg
+```
+
+`-o` is cURL's output option which enables file renaming, so the downloaded image is named `cyberpunk_2077_no-tell_motel.jpg`.
+
+```shell
+$ gm -resize 1600x cyberpunk_2077_no-tell_motel.jpg
+```
+
+The `1600x` argument tells GraphicsMagick to resize the image from **1920** wide to **1600** wide and conform image height to aspect ratio.
