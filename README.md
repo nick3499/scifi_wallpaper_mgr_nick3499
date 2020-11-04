@@ -161,3 +161,5 @@ $ gm -resize 1600x cyberpunk_2077_no-tell_motel.jpg
 ```
 
 The `1600x` argument tells GraphicsMagick to resize the image from **1920** wide to **1600** wide and conform image height to aspect ratio.
+
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/R6R72LISM)
